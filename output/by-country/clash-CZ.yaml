@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 195.85.23.47
+  server: 195.85.23.45
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 195.85.23.29
+  server: 195.85.23.219
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -34,32 +34,32 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 03 - xiaohe
   type: vless
-  server: 195.85.23.252
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  server: 84.32.217.120
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /channels/act
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: cdn8848.776676.xyz
 - name: 🇨🇿 CZ 04 - xiaohe
   type: vless
-  server: 188.114.96.8
-  port: 443
-  uuid: 513beae3-56e7-4954-a17e-930e06237b27
+  server: 64.225.110.247
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /vl/piIRdE9WUi24Sn3bb2oSJ?ed=2560
+    path: /acg/buy/ajax
     headers:
-      Host: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select

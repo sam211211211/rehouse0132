@@ -15,7 +15,7 @@ proxies:
   servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /ws
     headers:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
@@ -29,9 +29,16 @@ proxies:
   servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws
+    path: /ws?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: ss
+  server: 130.49.176.26
+  port: 1443
+  cipher: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNR0ppWg
+  password: ''
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 rules:
 - MATCH,PROXIES

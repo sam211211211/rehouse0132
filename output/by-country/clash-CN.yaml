@@ -11,26 +11,17 @@ proxies:
   cipher: aes-128-gcm
   password: 2wsxcde4
   udp: true
-- name: 🇨🇳 CN 02 - xiaohe
-  type: ss
-  server: 124.151.25.50
-  port: 8024
-  cipher: aes-128-gcm
-  password: 2wsxcde4
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇳 CN 01 - xiaohe
-  - 🇨🇳 CN 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇳 CN 01 - xiaohe
-  - 🇨🇳 CN 02 - xiaohe
 rules:
 - MATCH,PROXIES

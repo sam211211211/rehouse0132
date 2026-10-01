@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
+- name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.89.41
+  port: 443
+  uuid: 4ccf70f9-7632-4b5a-9557-10d2dd347bb2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: To6R63-kKChiGHqm2.vxz0Dduq7to7Su0CDQf.worKERs.DEV
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /vl/zhlUKkHT4SNWHmPFOf4cu6
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
